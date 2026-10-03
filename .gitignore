@@ -1,0 +1,10 @@
+# Visual Studio cache/options directory
+/.vs/
+
+# Build results
+/Bin/
+/OpenHardwareMonitorApi/x64/
+/PluginDemo/x64/
+/TrafficMonitor/x64/
+/TrafficMonitor/compile_time.txt
+/aa_compile_time.txt

@@ -1,0 +1,2 @@
+https://stackoverflow.com/questions/35996399/force-visual-studio-to-rebuild-on-start-debugging
+
