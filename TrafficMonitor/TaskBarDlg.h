@@ -230,6 +230,8 @@ public:
 protected:
     afx_msg LRESULT OnExitmenuloop(WPARAM wParam, LPARAM lParam);
     afx_msg LRESULT OnTabletQuerysystemgesturestatus(WPARAM wParam, LPARAM lParam);
+    bool m_first_start{ true };
+    void SetMousePenetrate();
 public:
     afx_msg BOOL OnMouseWheel(UINT nFlags, short zDelta, CPoint pt);
 };

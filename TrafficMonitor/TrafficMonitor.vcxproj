@@ -773,6 +773,8 @@
     </PreLinkEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Text Include="..\aa_compile_time.txt" />
+    <Text Include="..\a_tricks.txt" />
     <Text Include="compile_time.txt" />
     <Text Include="ReadMe.txt" />
     <Text Include="res\Acknowledgement.txt" />
@@ -1007,8 +1009,15 @@
     <ResourceCompile Include="TrafficMonitor.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\.gitattributes" />
+    <None Include="..\.gitignore" />
+    <None Include="..\aa_post_build.bat" />
+    <None Include="..\aa_pre_build.bat" />
     <None Include="..\LICENSE" />
-    <None Include="..\LICENSE_CN" />
+    <None Include="..\README.md" />
+    <None Include="..\README.md.orig" />
+    <None Include="..\version.info" />
+    <None Include="..\version_utf8.info" />
     <None Include="language\English.ini" />
     <None Include="language\Simplified_Chinese.ini" />
     <None Include="language\Traditional_Chinese.ini" />

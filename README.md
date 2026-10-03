@@ -7,14 +7,18 @@ A **modified** version of [TrafficMonitor](https://github.com/zhongyang219/Traff
 * appearance inside the taskbar (vertical arrangement on Windows 10, horizontal arrangement on Windows 11, see "Screenshots" folder);
 * different default settings:
   * don't check for updates on startup;
-  * don't show notify icon;
   * don't show main window;
   * show inside the taskbar;
-  * show: network speed (upload and download), CPU usage, RAM usage (Disk usage and GPU usage can be added);
+  * show: network speed (upload and download), CPU usage, RAM usage, GPU usage, Disk usage;
   * don't show resource usage graphs;
-  * font used;
-  * open Windows Task Manager on double click;
-  * portable mode enabled.
+  * different font used;
+  * portable mode enabled;
+  * on Windows 10:
+	* don't show notify icon;
+	* open Windows Task Manager on double click;
+  * on Windows 11:
+	* show notify icon;
+	* mouse penetrate;
 * portable mode fixed (don't create settings folder on AppData);
 * values lenght and spacing;
 * only released as portable executable.

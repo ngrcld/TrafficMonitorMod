@@ -84,7 +84,9 @@ void CWin11TaskbarDlg::AdjustTaskbarWndPos(bool force_adjust)
 
         // CLAUDIO
         m_rect.MoveToX(m_rcTaskbar.Width() - m_window_width - 80);
-        m_rect.MoveToY(m_rcTaskbar.Height() - m_window_height - 2);
+        // taskbar bottom: m_rect.MoveToY(m_rcTaskbar.Height() - m_window_height - 2);
+        // taskbar top:    m_rect.MoveToY(m_window_height - 9);
+        m_rect.MoveToY(m_window_height - 9);
         // END CLAUDIO
 
         MoveWindow(m_rect);

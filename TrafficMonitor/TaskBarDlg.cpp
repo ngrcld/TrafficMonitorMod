@@ -742,6 +742,7 @@ void CTaskBarDlg::ApplySettings()
 {
     SetTextFont();
     CalculateWindowSize();
+    SetMousePenetrate();
 }
 
 void CTaskBarDlg::CalculateWindowSize()
@@ -1259,6 +1260,12 @@ void CTaskBarDlg::OnTimer(UINT_PTR nIDEvent)
         CalculateWindowSize();
     }
 
+    if (m_first_start)
+    {
+        SetMousePenetrate();
+        m_first_start = false;
+    }
+
     CDialogEx::OnTimer(nIDEvent);
 }
 
@@ -1470,6 +1477,12 @@ afx_msg LRESULT CTaskBarDlg::OnExitmenuloop(WPARAM wParam, LPARAM lParam)
 afx_msg LRESULT CTaskBarDlg::OnTabletQuerysystemgesturestatus(WPARAM wParam, LPARAM lParam)
 {
     return 0;
+}
+
+
+void CTaskBarDlg::SetMousePenetrate()
+{
+    SetWindowLong(m_hWnd, GWL_EXSTYLE, GetWindowLong(m_hWnd, GWL_EXSTYLE) | WS_EX_TRANSPARENT);
 }
 
 

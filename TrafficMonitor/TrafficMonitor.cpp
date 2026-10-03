@@ -95,9 +95,9 @@ void CTrafficMonitorApp::LoadConfig()
     m_cfg_data.m_transparency = ini.GetInt(_T("config"), _T("transparency"), 80);
     m_main_wnd_data.m_always_on_top = ini.GetBool(_T("config"), _T("always_on_top"), true);
     m_main_wnd_data.m_lock_window_pos = ini.GetBool(_T("config"), _T("lock_window_pos"), false);
-    m_general_data.show_notify_icon = ini.GetBool(_T("config"), _T("show_notify_icon"), false);
+    m_general_data.show_notify_icon = ini.GetBool(_T("config"), _T("show_notify_icon"), m_win_version.IsWindows11OrLater());
     m_cfg_data.m_show_more_info = ini.GetBool(_T("config"), _T("show_cpu_memory"), false);
-    m_main_wnd_data.m_mouse_penetrate = ini.GetBool(_T("config"), _T("mouse_penetrate"), false);
+    m_main_wnd_data.m_mouse_penetrate = ini.GetBool(_T("config"), _T("mouse_penetrate"), m_win_version.IsWindows11OrLater());
     m_cfg_data.m_show_task_bar_wnd = ini.GetBool(_T("config"), _T("show_task_bar_wnd"), true);
     m_cfg_data.m_position_x = ini.GetInt(_T("config"), _T("position_x"), -1);
     m_cfg_data.m_position_y = ini.GetInt(_T("config"), _T("position_y"), -1);
@@ -171,7 +171,7 @@ void CTrafficMonitorApp::LoadConfig()
     ini.LoadTaskbarWndColors(_T("task_bar"), _T("task_bar_text_color"), m_taskbar_data.text_colors, m_taskbar_data.dft_text_colors);
     m_taskbar_data.specify_each_item_color = ini.GetBool(L"task_bar", L"specify_each_item_color", false);
     //m_cfg_data.m_tbar_show_cpu_memory = ini.GetBool(_T("task_bar"), _T("task_bar_show_cpu_memory"), false);
-    m_taskbar_data.display_item.FromInt(ini.GetInt(L"task_bar", L"tbar_display_item", DisplayItemSet{ TDI_UP, TDI_DOWN, TDI_CPU, TDI_MEMORY }.ToInt()));
+    m_taskbar_data.display_item.FromInt(ini.GetInt(L"task_bar", L"tbar_display_item", DisplayItemSet{ TDI_UP, TDI_DOWN, TDI_CPU, TDI_MEMORY, TDI_GPU_USAGE, TDI_HDD_USAGE }.ToInt()));
     m_taskbar_data.show_taskbar_wnd_in_secondary_display = ini.GetBool(L"task_bar", L"show_taskbar_wnd_in_secondary_display", false);
     m_taskbar_data.secondary_display_index = ini.GetInt(L"task_bar", L"secondary_display_index", 0);
 
