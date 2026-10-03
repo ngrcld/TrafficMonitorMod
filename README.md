@@ -1,7 +1,7 @@
 TrafficMonitorMod
 =================
 
-A **modified** version of [TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor): a system monitoring software, free and open-source, created by zhongyang219. It displays the current network speed, and the current usage of CPU, RAM, DISK, GPU.
+A **modified** version of [TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor) (v 2026-09-27): a system monitoring software, free and open-source, created by zhongyang219. It displays the current network speed, and the current usage of CPU, RAM, DISK, GPU.
 
 ### My modifications ###
 * appearance inside the taskbar (vertical arrangement on Windows 10, horizontal arrangement on Windows 11, see screenshots);
