@@ -8,3 +8,5 @@
 /TrafficMonitor/x64/
 /TrafficMonitor/compile_time.txt
 /aa_compile_time.txt
+/00_Release/**
+!/00_Release/TrafficMonitor.exe

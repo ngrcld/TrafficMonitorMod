@@ -6,5 +6,6 @@ del "..\Bin\x64\Release (lite)\history_traffic.dat.bak"
 echo %date:~0,10% >> ..\aa_compile_time.txt
 echo %time:~0,8% >> ..\aa_compile_time.txt
 
-mkdir "..\_Release"
-copy "..\Bin\x64\Release (lite)\TrafficMonitor.exe" "..\_Release\"
+mkdir "..\00_Release"
+del "..\00_Release\*" /Q
+copy "..\Bin\x64\Release (lite)\TrafficMonitor.exe" "..\00_Release\"
