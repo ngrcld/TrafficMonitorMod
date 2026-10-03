@@ -10,7 +10,7 @@ A **modified** version of [TrafficMonitor](https://github.com/zhongyang219/Traff
   * don't show notify icon;
   * don't show main window;
   * show inside the taskbar;
-  * show: network speed (upload and download), CPU usage, RAM usage;
+  * show: network speed (upload and download), CPU usage, RAM usage; Disk usage and GPU usage can be added;
   * don't show resource usage graphs;
   * font used;
   * open Windows Task Manager on double click;
