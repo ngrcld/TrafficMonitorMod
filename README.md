@@ -18,3 +18,7 @@ A **modified** version of [TrafficMonitor](https://github.com/zhongyang219/Traff
 * portable mode fixed (don't create settings folder on AppData);
 * values lenght and spacing;
 * only released as portable executable.
+
+### Development ###
+* Written in C#
+* Compiles with Microsoft Visual Studio Community 2022 (free).
