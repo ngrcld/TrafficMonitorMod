@@ -24,9 +24,11 @@ A **modified** version of [TrafficMonitor](https://github.com/zhongyang219/Traff
 * only released as portable executable.
 
 ### Screenshots ###
-![Windows 10 taskbar]("./Screenshots/Windows 10 taskbar.png")
-![Windows 11 taskbar light](./Screenshots/Windows 11 taskbar light.png)
-![Windows 11 taskbar dark](./Screenshots/Windows 11 taskbar dark.png)
+Windows 10: ![Windows 10](./Screenshots/Windows%2010%20taskbar.png)
+
+Windows 11 light: ![Windows 11 light](./Screenshots/Windows%2011%20taskbar%20light.png)
+
+Windows 11 dark: ![Windows 11 dark](./Screenshots/Windows%2011%20taskbar%20dark.png)
 
 ### Development ###
 * Written in C#
